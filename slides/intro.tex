@@ -1,0 +1,150 @@
+\documentclass[10pt]{beamer}
+
+  % Math Packages
+  \usepackage{amsmath}
+  \usepackage{amsthm}
+  \usepackage{mathtools}
+
+  % Graphics Packages
+  \usepackage{graphicx}
+  \usepackage[export]{adjustbox}
+
+  % Hyperlinks
+  \usepackage{hyperref}
+  \hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
+
+  % Theme Settings
+  \usetheme{metropolis}
+  \usefonttheme{professionalfonts}
+
+\title{Computational Economics}
+\author{Chase Coleman}
+\institute{Rice}
+\date[]{\today}
+
+\begin{document}
+
+
+% Title Slide
+\begin{frame}
+  \thispagestyle{empty}
+  \titlepage
+\end{frame}
+
+
+\section{Introduction}
+
+  \begin{frame} \frametitle{``Goal of economic research''}
+  
+    Tom Sargent \href{http://www.tomsargent.com/personal/dinner_speech_2015.pdf}{described} his point
+    of view of what economists do by modifying a metaphor used by Richard Feynman to describe
+    astrophysics research.
+  
+    \vspace{0.5cm}
+  
+    \begin{quote}
+      An astrophysicist is in the position of someone who does not know a game called chess and who
+      observes an incomplete set of moves chosen by players who happen to be playing chess. From
+      these, the observer's job is to discover the players' purposes and the rules of chess. For
+      Feynman, the ``rules of the game of chess'' stand in for unknown laws of physics
+    \end{quote}
+  
+  \end{frame}
+  
+  
+  \begin{frame} \frametitle{``Goal of economic research''}
+  
+    Tom goes on to describe how economics differs from astrophysics
+  
+    \vspace{0.5cm}
+  
+    \begin{quote}
+      Like Feynman's metaphorical physicist, our task as economics is to infer a ``game'' from
+      observed data. But then we want to do something that physicists don't: to think about how
+      different ``games'' might produce improved outcomes
+    \end{quote}
+  
+  \end{frame}
+  
+  
+  \begin{frame} \frametitle{Examples of questions in economic research}
+  
+    Economists have relatively broad interests and the examples below are not representative of
+    everything economists might study:
+  
+    \begin{itemize}
+      \item Imagine the world is experiencing a pandemic (not too hard for most people in this room
+        to imagine what that's like\dots). What policies best manage the trade-off between the need
+        to keep our economy running and the risks associated with a pandemic? See
+        \href{https://www.nber.org/papers/w27102}{Acemoglu, Chernozhukov, Werning, Whinston}
+      \item What are possible causes of the Black-White gap in college attainment? Are there policies
+        that we could implement that would lower this gap? See
+        \href{https://s3.amazonaws.com/real.stlouisfed.org/wp/2022/2022-036.pdf}{Gregory, Kozlowski, Rubinton}
+      \item Governments that make commitments to do things like ``cut spending'' or ``lower
+        inflation'' are often incentivized to make different choices in the future. What forms of
+        commitment can help us manage these incentives and prevent future reneging on past promises?
+        See \href{http://www.tomsargent.com/research/LS_tom.pdf}{Jiang, Sargent, Wang}
+    \end{itemize}
+
+  \end{frame}
+
+
+\section{How/Why Computational Economics?}
+
+  \begin{frame} \frametitle{What is ``computational economics''?}
+
+    Computational economists attempt to build ``mathematical versions of an economy'' where they
+    can perform experiments and learn about how the world might react to different policies.
+
+    \vspace{0.5cm}
+
+  \end{frame}
+
+
+  \begin{frame} \frametitle{Why ``computational economics''?}
+
+    \begin{itemize}
+      \item \textbf{Cost}: Economic experiments can be relatively expensive -- For example,
+        studies on the universal basic income are almost always restrictive in size due to costs.
+        This limits the scale and generalizability of these programs. Lots of examples like this
+        in other industries (car safety ratings, airplane design, etc...)
+    \end{itemize}
+  \end{frame}
+
+
+
+  \begin{frame} \frametitle{Why ``computational economics''?}
+
+    \begin{itemize}
+      \item \textbf{Ethics}: It would be ethically challenging to run experiments for many
+        interesting questions in economics. For example, imagine trying to measure the impact of
+        a severance on how long it takes an individual to find a job. To measure this
+        experimentally you might find 50,000 working individuals and fire them giving half of
+        those fired a severance payment and no payment to the other half.
+    \end{itemize}
+  \end{frame}
+
+
+  \begin{frame} \frametitle{Why ``computational economics''?}
+
+    \begin{itemize}
+      \item \textbf{Lucas critique}: The Lucas critique is the idea that if we attempt to build
+        policies based on statistical relationships within data, then we don't know what will
+        happen because people might change their behavior.
+        \href{http://www.tomsargent.com/research/Critique_Consequence.pdf}{This paper} is an
+        excellent read if you would like to know more
+    \end{itemize}
+  \end{frame}
+
+
+  \begin{frame} \frametitle{Why ``computational economics''?}
+
+    \begin{itemize}
+      \item \textbf{Quantiative ``realism''}: Lots of economists build models but computational
+        economists typically build a slight more complex model of the economy which cannot
+        typically be solved by pen and paper -- This aim of this complexity is to provide a more
+        precise quantification of what might occur under different economic policies.
+    \end{itemize}
+  \end{frame}
+
+\end{document}
